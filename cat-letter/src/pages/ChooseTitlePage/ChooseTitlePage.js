@@ -1,7 +1,7 @@
 import React from "react";
 import ChooseTitle from "../../components/ChooseTitle/ChooseTitle";
 
-const MainPage = () => {
+const ChooseTitlePage = () => {
   return (
     <>
       <ChooseTitle />
@@ -9,4 +9,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default ChooseTitlePage;
