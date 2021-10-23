@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ChooseTitle from "../../components/ChooseTitle/ChooseTitle";
+import TitleText from "../../components/TitleText/TitleText";
 import NextButton from "../../components/NextButton/NextButton";
 
 const Wrapper = styled.div`
@@ -20,15 +20,17 @@ const ContentWrapper = styled.div`
   position: relative;
 `;
 
-const ChooseTitlePage = () => {
+const TypeLetterPage = () => {
   return (
     <Wrapper>
       <ContentWrapper>
-        <ChooseTitle></ChooseTitle>
+        <TitleText detailText={"표지는 앞에 고른 사진으로 보내질 예정이에요."}>
+          상대에게 보내고 싶은 말을 적어보세요!
+        </TitleText>
         <NextButton changePage={"/type_letter"}>다음으로 넘어간다옹</NextButton>
       </ContentWrapper>
     </Wrapper>
   );
 };
 
-export default ChooseTitlePage;
+export default TypeLetterPage;
