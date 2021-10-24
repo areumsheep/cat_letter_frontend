@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import GoodWitch from "../../components/GoodWitch/GoodWitch";
 import TitleText from "../../components/TitleText/TitleText";
-import LetterWrite from "../../components/LetterWrite/LetterWrite";
 import NextButton from "../../components/NextButton/NextButton";
 
 const Wrapper = styled.div`
@@ -21,14 +21,15 @@ const ContentWrapper = styled.div`
   position: relative;
 `;
 
-const TypeLetterPage = () => {
+const ShareLetterPage = () => {
   return (
     <Wrapper>
       <ContentWrapper>
-        <TitleText detailText={"표지는 앞에 고른 사진으로 보내질 예정이에요."}>
-          상대에게 보내고 싶은 말을 적어보세요!
+        <GoodWitch />
+        <TitleText detailText={"따봉 마법사야 고마워!"}>
+          만들어진 편지를 공유해봐요.
         </TitleText>
-        <LetterWrite />
+        {/* <LetterWrite /> */}
         <NextButton changePage={"/conjure_letter"}>
           편지를 다 작성했어요!
         </NextButton>
@@ -37,4 +38,4 @@ const TypeLetterPage = () => {
   );
 };
 
-export default TypeLetterPage;
+export default ShareLetterPage;

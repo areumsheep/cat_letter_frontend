@@ -25,7 +25,7 @@ const ChooseTitlePage = () => {
     <Wrapper>
       <ContentWrapper>
         <ChooseTitle></ChooseTitle>
-        <NextButton changePage={"/type_letter"}>다음으로 넘어간다옹</NextButton>
+        <NextButton changePage={"/type_letter"}>표지를 다 골랐어요!</NextButton>
       </ContentWrapper>
     </Wrapper>
   );

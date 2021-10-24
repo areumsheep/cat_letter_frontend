@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import TitleText from "../../components/TitleText/TitleText";
-import LetterWrite from "../../components/LetterWrite/LetterWrite";
+import LetterConjure from "../../components/LetterConjure/LetterConjure";
 import NextButton from "../../components/NextButton/NextButton";
 
 const Wrapper = styled.div`
@@ -21,20 +21,20 @@ const ContentWrapper = styled.div`
   position: relative;
 `;
 
-const TypeLetterPage = () => {
+const ConjureLetterPage = () => {
   return (
     <Wrapper>
       <ContentWrapper>
-        <TitleText detailText={"표지는 앞에 고른 사진으로 보내질 예정이에요."}>
-          상대에게 보내고 싶은 말을 적어보세요!
+        <TitleText detailText={"뾰로롱~ 마법사가 편지에 마법을 부리고 있어요!"}>
+          마법으로 잠긴 편지를 공유해볼까요?
         </TitleText>
-        <LetterWrite />
-        <NextButton changePage={"/conjure_letter"}>
-          편지를 다 작성했어요!
+        <LetterConjure />
+        <NextButton changePage={"/share_letter"}>
+          네 좋아요! 공유해볼래요!
         </NextButton>
       </ContentWrapper>
     </Wrapper>
   );
 };
 
-export default TypeLetterPage;
+export default ConjureLetterPage;
