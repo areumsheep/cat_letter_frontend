@@ -5,9 +5,9 @@ import styled from "styled-components";
 const Button = styled.div`
   background-color: #c4c4c4;
   width: 90%;
-  height: 10vh;
+  height: 9vh;
   color: white;
-  line-height: 10vh;
+  line-height: 9vh;
   margin: 0 auto;
   border-radius: 30px;
   bottom: 18px;

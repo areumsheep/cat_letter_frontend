@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import LetterLine from "../../static/Typing/letter_line.png";
 
 const DetailText = styled.p`
   font-size: 15px;
@@ -10,17 +9,7 @@ const DetailText = styled.p`
 const MainText = styled.h3`
   font-size: 21px;
   font-weight: 700;
-  margin-bottom: 10px;
-`;
-const LetterText = styled.textarea`
-  background-image: url(${LetterLine});
-  width: 375px;
-  height: 173px;
-  font-family: "Gowun Batang", serif;
-  font-size: 16px;
-  border: 0;
-  outline: 0;
-  line-height: 22px;
+  margin-bottom: 15px;
 `;
 
 const TitleText = (props) => {
@@ -28,7 +17,6 @@ const TitleText = (props) => {
     <>
       <DetailText>{props.detailText}</DetailText>
       <MainText>{props.children}</MainText>
-      <LetterText>foo bar</LetterText>
     </>
   );
 };
