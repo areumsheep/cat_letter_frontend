@@ -22,20 +22,20 @@ const ContentWrapper = styled.div`
 `;
 
 const ShareLetterPage = () => {
-  return (
-    <Wrapper>
-      <ContentWrapper>
-        <GoodWitch />
-        <TitleText detailText={"따봉 마법사야 고마워!"}>
-          만들어진 편지를 공유해봐요.
-        </TitleText>
-        {/* <LetterWrite /> */}
-        <NextButton changePage={"/conjure_letter"}>
-          편지를 다 작성했어요!
-        </NextButton>
-      </ContentWrapper>
-    </Wrapper>
-  );
+    return (
+        <Wrapper>
+            <ContentWrapper>
+                <GoodWitch />
+                <TitleText detailText={"따봉 마법사야 고마워!"}>
+                    만들어진 편지를 공유해봐요.
+                </TitleText>
+                {/* <LetterWrite /> */}
+                <NextButton changePage={"/conjure_letter"} isActive={true}>
+                    편지를 다 작성했어요!
+                </NextButton>
+            </ContentWrapper>
+        </Wrapper>
+    );
 };
 
 export default ShareLetterPage;

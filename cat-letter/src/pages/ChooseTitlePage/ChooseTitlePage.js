@@ -21,14 +21,14 @@ const ContentWrapper = styled.div`
 `;
 
 const ChooseTitlePage = () => {
-  return (
-    <Wrapper>
-      <ContentWrapper>
-        <ChooseTitle></ChooseTitle>
-        <NextButton changePage={"/type_letter"}>표지를 다 골랐어요!</NextButton>
-      </ContentWrapper>
-    </Wrapper>
-  );
+    return (
+        <Wrapper>
+            <ContentWrapper>
+                <ChooseTitle></ChooseTitle>
+                <NextButton changePage={"/type_letter"} isActive={true}>표지를 다 골랐어요!</NextButton>
+            </ContentWrapper>
+        </Wrapper>
+    );
 };
 
 export default ChooseTitlePage;

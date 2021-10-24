@@ -23,15 +23,16 @@ const LetterDetailImg = styled.img`
   width: 28%;
 `;
 
-const LetterWrite = () => {
-  return (
-    <>
-      <LetterText placeholder={"예시) 안녕 할로윈 잘 보내!"}></LetterText>
-      <LetterDetailImgContainer>
-        <LetterDetailImg src={LetterDetail} />
-      </LetterDetailImgContainer>
-    </>
-  );
+const LetterWrite = (props) => {
+    const { changeInput } = props;
+    return (
+        <>
+            <LetterText placeholder={"예시) 안녕 할로윈 잘 보내!"} onChange={e => changeInput(e.target.value)}></LetterText>
+            <LetterDetailImgContainer>
+                <LetterDetailImg src={LetterDetail} />
+            </LetterDetailImgContainer>
+        </>
+    );
 };
 
 export default LetterWrite;
