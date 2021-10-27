@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
 const Button = styled.div`
-  background-color: ${props => props.isActive ? "#ff8b3f" : "#c4c4c4"};
+  background-color: ${(props) => (props.isActive ? "#e78d05" : "#c4c4c4")};
   width: 90%;
   height: 9vh;
   color: white;
@@ -23,14 +23,18 @@ const Button = styled.div`
 `;
 
 const NextButton = (props) => {
-    const { isActive, changePage, alertText } = props;
-    const history = useHistory();
-    const onChagePage = () => {
-        if (isActive) history.push(changePage);
-        else alert(alertText);
-    };
+  const { isActive, changePage, alertText } = props;
+  const history = useHistory();
+  const onChagePage = () => {
+    if (isActive) history.push(changePage);
+    else alert(alertText);
+  };
 
-    return <Button onClick={onChagePage} isActive={isActive}>{props.children}</Button>;
+  return (
+    <Button onClick={onChagePage} isActive={isActive}>
+      {props.children}
+    </Button>
+  );
 };
 
 export default NextButton;
